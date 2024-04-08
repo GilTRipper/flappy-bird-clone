@@ -11,7 +11,7 @@ public class PipeScipt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.left * _moveSpeed) * Time.deltaTime;
+        transform.position = transform.position + _moveSpeed * Time.deltaTime * Vector3.left;
         if (transform.position.x < _deadZone)
         {
             Destroy(gameObject);
