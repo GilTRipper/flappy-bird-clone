@@ -1,7 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "NativeCallProxy.h"
 
-
 @implementation FrameworkLibAPI
 
 id<NativeCallsProtocol> api = NULL;
@@ -12,8 +11,10 @@ id<NativeCallsProtocol> api = NULL;
 
 @end
 
-
-extern "C" {
-    void showHostMainWindow(const char* color) { return [api showHostMainWindow:[NSString stringWithUTF8String:color]]; }
+extern "C"
+{
+    void sendMessageToMobileApp(const char* message)
+    {
+        return [api sendMessageToMobileApp:[NSString stringWithUTF8String:message]];
+    }
 }
-

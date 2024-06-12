@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Logic
   - Game Over
+  - Score
   layers:
   - Default
   - TransparentFX

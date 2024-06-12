@@ -10,6 +10,7 @@ public class BirdScript : MonoBehaviour
     private LogicManagerScript _logic;
     private bool _isBirdAlive = true;
 
+
     // Start is called before the first frame update
     void KillBird()
     {
